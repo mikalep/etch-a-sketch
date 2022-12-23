@@ -1,3 +1,4 @@
+/* Reset */
 *,
 *::before,
 *::after {
@@ -6,20 +7,26 @@
   padding: 0;
 }
 
+/* Elements */
 hr {
   display: none;
 }
 
+body {
+  height: 100%;
+}
+
+/* IDs */
 #btn-container {
   display: flex;
   justify-content: space-between;
-  gap: 10px;
-  margin-top: 20px;
+  gap: 0.625rem;
+  margin-top: 1.25rem;
 }
 
 #btn-container button {
-  border-radius: 5px;
-  padding: 10px 15px;
+  border-radius: 0.3rem;
+  padding: 0.625rem 0.93rem;
 }
 
 #container {
@@ -27,17 +34,22 @@ hr {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  height: 60vh;
+  padding: 3.125rem;
+}
+
+#cpicker {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 #grid-container {
   display: grid;
-  grid-template-columns: repeat(16, 35px);
+  grid-template-columns: repeat(16, 1fr);
 }
 
+/* Classes */
 .cell {
-  height: 35px;
-  width: 35px;
   background: rgba(0, 0, 0, 0.1);
   border: 1px white solid;
 }
